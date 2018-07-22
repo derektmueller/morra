@@ -92,7 +92,7 @@ morra' p1 p2 = do
 
   if guessedCorrectly p1Move moves && guessedCorrectly p2Move moves
   then
-    liftIO $ putStrLn $ "Both players guessed correctly. No points awareded."
+    liftIO $ putStrLn $ "Both players guessed correctly. No points awarded."
   else if guessedCorrectly p1Move moves
   then do
     liftIO $ putStrLn $ (name p1) ++ " guessed correctly."
